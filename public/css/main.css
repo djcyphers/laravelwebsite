@@ -8,81 +8,21 @@ body { overflow:hidden; }
 /*** Background Images ***/
 .parallax { width:300%; height:1200px; overflow:hidden; position: relative; }
 
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-  #main-bg            {
-    max-width: 120%;
-    width: 50%;
-    height: 100%;
-    z-index: 1;
-  }
-}
+/* About Me */
+.inner { width:920px; height:360px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:15px; }
 
-/* iPads (landscape) ----------- */
-@media only screen 
-and (max-width : 1223px)
-and (min-width : 768px) {
-  #main-bg            {
-    max-width: 120%;
-    width: 60%;
-    height: 100%;
-    margin-top: -100px;
-    z-index: 1;
-  }
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (max-width : 767px)
-and (min-width : 601px) {
-  #main-bg            {
-    max-width: 120%;
-    width: 70%;
-    height: 100%;
-    margin-left: -100px;
-    margin-top: -100px;
-    z-index: 1;
-  }
-  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
-  .links { font-size: 2.5vw; word-spacing:30px; }
-}
-
-/* Iphone and Android ----------- */
-@media only screen 
-and (max-width : 600px) {
-  #main-bg            {
-    max-width: 120%;
-    width: 80%;
-    height: 100%;
-    margin-left: -100px;
-    margin-top: -80px;
-    z-index: 1;
-  }
-  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
-  .links { font-size: 2.5vw; word-spacing:30px; }
-}
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px)
-and (orientation : portrait) {
-  /* Styles */
-}
+.inner2 { width:900px; height:340px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
 
 /*** Menu/Nav ***/
 
 #menu { float:right; position:absolute; top:20px; right:10px; z-index:10; }
 
 #menu a { background:#222; color:#CCCCCC; border:#AAA 3px solid;  text-decoration:none; padding:10px; margin-right:10px; border-radius:10px; -webkit-border-radius:10px;}
-                    
+
 #menu a:hover { background: #333; color:#FFF; border:#FFF 3px solid; text-decoration:none; padding:10px; margin-right:10px; border-radius:10px; -webkit-border-radius:10px;}
 
 #menu a.selected { background:#444; color:#FFF; border:#67b2ff 3px solid; text-decoration:none; padding:10px; margin-right:10px; border-radius:10px; -webkit-border-radius:10px;}
-                    
+
 #menu li { float:left; }
 
 ul { list-style: none;}
@@ -110,11 +50,6 @@ p { color:#FFFFFF;}
 
 .content4 { width:620px; height:380px; top:20%; bottom:10%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); }
 
-/* About Me */            
-.inner { width:920px; height:360px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:15px; }
-                
-.inner2 { width:900px; height:340px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
-
 /* Gallery */
 #pic2 {width:920px; height:340px; top:20%; bottom:20%; margin-left:auto; margin-right:auto; position:fixed; overflow:hidden;}
 
@@ -123,3 +58,72 @@ p { color:#FFFFFF;}
 
 /* Logo */
 h1#logo { background:url(../images/Logo.png) top left no-repeat; height:62px; width:481px; }
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+  #main-bg            {
+    max-width: 120%;
+    width: 50%;
+    height: 100%;
+    z-index: 1;
+  }
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (max-width : 1223px)
+and (min-width : 768px) {
+  #main-bg            {
+    max-width: 120%;
+    width: 60%;
+    height: 100%;
+    margin-top: -100px;
+    z-index: 1;
+  }
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (max-width : 767px)
+and (min-width : 601px) {
+  #main-bg            {
+    max-width: 120%;
+    width: 70%;
+    height: 50%;
+    margin-left: -100px;
+    margin-top: -100px;
+    z-index: 1;
+  }
+  /* About Me */
+  .inner { width:620px; height:270px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:10px; }
+  .inner2 { width:600px; height:250px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
+  .content2 { width:630px; height:280px; top:20%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0.3); border-radius:35px; -webkit-border-radius: 35px 35px 35px 35px; }
+  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
+  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
+  .links { font-size: 2.5vw; word-spacing:30px; }
+}
+
+/* Iphone and Android ----------- */
+@media only screen
+and (max-width : 600px) {
+  #main-bg            {
+    max-width: 120%;
+    width: 80%;
+    height: 100%;
+    margin-left: -100px;
+    margin-top: -80px;
+    z-index: 1;
+  }
+  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
+  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
+  .links { font-size: 2.5vw; word-spacing:30px; }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px)
+and (orientation : portrait) {
+  /* Styles */
+}

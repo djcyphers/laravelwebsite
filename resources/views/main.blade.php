@@ -8,7 +8,7 @@
         <div id="parallax-bg" class="parallax">
             <img id="main-bg" src="{{ asset('img/Wide-landscape-lakeview.png') }}">
         </div>
-        
+
         <!-- End Effect -->
         <div id="header">
             <!-- <div id="firefly"></div> -->
@@ -36,12 +36,12 @@
 
                     <div class="links">
                         <!-- Links go here -->
-                        <a href="https://github.com/djcyphers/laravelapp">GitHub</a>
+                        <a href="https://github.com/djcyphers/laravelwebsite">GitHub</a>
                         <a href="https://www.linkedin.com/in/dennis-cyphers-74932219/">LinkedIn</a>
                         <a href="https://www.facebook.com/iheardancemusic">Facebook</a>
                     </div>
                     <!-- End Temp -->
-                
+
                 </div>
             </li><!-- end box1 -->
             <li id="box2" class="box">
@@ -61,11 +61,11 @@
             <li id="box4" class="box">
                 <a name="box4"></a>
                 <div class="content4">
-                
+
                <!-- <iframe src="http://www.ustream.tv/embed/10054617" width="608" height="368" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe><br /> -->
-                
+
                 </div>
-              
+
             </li><!-- end box4 -->
         </ul><!-- end mask -->
     </div><!-- end wrapper -->

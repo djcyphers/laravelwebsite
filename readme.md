@@ -9,7 +9,7 @@
 
 ## djcyphers.com
 
-This a rebuild of my old website. From simple HTML / CSS / jQuery to the Laravel framework.
+This is a rebuild of my old website. From simple HTML / CSS / jQuery to the Laravel framework.
 
 ## About Laravel
 
