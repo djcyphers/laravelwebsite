@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, minimum-scale=0.7">
 
 <!-- Favicon -->
 <link rel="icon" href="{{ asset('img/favicon.gif') }}" type="image/gif">
@@ -17,7 +17,6 @@
 <meta name="description" content="Everything about Music, Life, and Myself">
 <meta name="keywords" content="djcyphers, house music, dance music, electro house, dubstep, edm, continuous mix, djmix, web design, web developer">
 <meta name="csrf-token" content="{{ csrf_token() }}">
-<meta name="viewport" content="width=device-width, initial-scale=0.7, maximum-scale=0.7, minimum-scale=0.7">
 
 <!-- Scripts -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
