@@ -61,7 +61,7 @@ h1#logo { background:url(../images/Logo.png) top left no-repeat; height:62px; wi
 
 /* Desktops and laptops ----------- */
 @media only screen
-and (min-width : 1224px) {
+and (min-width : 1920px) {
   #main-bg            {
     max-width: 120%;
     width: 50%;
@@ -70,15 +70,17 @@ and (min-width : 1224px) {
   }
 }
 
-/* iPads (landscape) ----------- */
+/* iPads (Portrait) ----------- */
 @media only screen
-and (max-width : 1223px)
-and (min-width : 768px) {
+and (max-width : 1337px)
+and (min-width : 1023px)
+and (max-height : 1025px)
+and (min-height : 767px) {
   #main-bg            {
     max-width: 120%;
     width: 60%;
-    height: 100%;
-    margin-top: -100px;
+    height: 60%;
+    margin-top: -120px;
     z-index: 1;
   }
   /* About Me */
@@ -87,10 +89,71 @@ and (min-width : 768px) {
   .content2 { width:630px; height:280px; top:20%; margin: 0 auto; margin-right: 110px; position:relative; background:rgba(255,255,255, 0.3); border-radius:35px; -webkit-border-radius: 35px 35px 35px 35px; }
 }
 
-/* iPads (portrait and landscape) ----------- */
+/* iPads (Portrait) ----------- */
 @media only screen
-and (max-width : 767px)
-and (min-width : 601px) {
+and (max-height : 1337px)
+and (min-height : 1023px)
+and (max-width : 1025px)
+and (min-width : 767px) {
+  #main-bg            {
+    max-width: 120%;
+    width: 60%;
+    height: 60%;
+    margin-top: -120px;
+    z-index: 1;
+  }
+  /* About Me */
+  .inner { width:620px; height:270px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:10px; }
+  .inner2 { width:600px; height:250px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
+  .content2 { width:630px; height:280px; top:20%; margin: 0 auto; margin-right: 110px; position:relative; background:rgba(255,255,255, 0.3); border-radius:35px; -webkit-border-radius: 35px 35px 35px 35px; }
+}
+
+/* iPhone X/XS/Plus and S9+ Firefox Mobile (Portrait) Soon to be depreciated ----------- */
+@media only screen
+and (max-width : 847px)
+and (min-width : 736px)
+and (max-height : 415px)
+and (min-height : 375px)
+and (-moz-touch-enabled) {
+  #main-bg            {
+    width: 60%;
+    height: 60%;
+    margin-left: -100px;
+    margin-top: -80px;
+    z-index: 1;
+  }
+  /* About Me */
+  .inner { width:620px; height:270px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:10px; }
+  .inner2 { width:600px; height:250px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
+  .content2 { width:630px; height:280px; top:20%; margin: 0 auto; margin-right: 110px; margin-top: 50px; position:relative; background:rgba(255,255,255, 0.3); border-radius:35px; -webkit-border-radius: 35px 35px 35px 35px; }
+}
+
+/* iPhone X/XS/Plus and S9+ Firefox Mobile (Portrait) Soon to be depreciated ----------- */
+@media only screen
+and (max-height : 847px)
+and (min-height : 736px)
+and (max-width : 415px)
+and (min-width : 375px)
+and (-moz-touch-enabled) {
+  #main-bg            {
+    width: 60%;
+    height: 60%;
+    margin-left: -100px;
+    margin-top: -80px;
+    z-index: 1;
+  }
+  /* About Me */
+  .inner { width:620px; height:270px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:10px; }
+  .inner2 { width:600px; height:250px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
+  .content2 { width:630px; height:280px; top:20%; margin: 0 auto; margin-right: 110px; margin-top: 50px; position:relative; background:rgba(255,255,255, 0.3); border-radius:35px; -webkit-border-radius: 35px 35px 35px 35px; }
+}
+
+/* iPhone X/XS/Plus and S9+ (Landscape) ----------- */
+@media only screen
+and (max-width : 847px)
+and (min-width : 736px)
+and (max-height : 415px)
+and (min-height : 375px) {
   #main-bg            {
     max-width: 120%;
     width: 70%;
@@ -108,21 +171,70 @@ and (min-width : 601px) {
   .links { font-size: 2.5vw; word-spacing:30px; }
 }
 
-/* Iphone and Android ----------- */
+/* iPhone X/XS/Plus and S9+ (Portrait) ----------- */
 @media only screen
-and (max-width : 600px) {
+and (max-height : 847px)
+and (min-height : 736px)
+and (max-width : 415px)
+and (min-width : 375px) {
   #main-bg            {
     max-width: 120%;
-    width: 80%;
-    height: 100%;
+    width: 100%;
+    height: 80%;
     margin-left: -100px;
-    margin-top: -80px;
+    margin-top: -100px;
+    z-index: 1;
+  }
+  /* About Me */
+  .inner { width:340px; height:470px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:10px; }
+  .inner2 { width:320px; height:450px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
+  .content2 { width:350px; height:480px; top:10%; right: 6%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0.3); border-radius:35px; -webkit-border-radius: 35px 35px 35px 35px; }
+  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw;  }
+  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw;}
+  .links { font-size: 2.5vw; word-spacing:30px; }
+}
+
+/* Iphone 6/7/8 and Android (Landscape)----------- */
+@media only screen
+and (max-width: 741px)
+and (min-width: 667px )
+and (max-height : 380px)
+and (min-height : 360px){
+  #main-bg            {
+    max-width: 120%;
+    width: 90%;
+    height: 70%;
+    margin-left: -100px;
+    margin-top: -100px;
     z-index: 1;
   }
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
   #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
   .links { font-size: 2.5vw; word-spacing:30px; }
 }
+
+/* Iphone 6/7/8 and Android (Portrait)----------- */
+@media only screen
+and (max-height: 741px)
+and (min-height: 667px )
+and (max-width : 380px)
+and (min-width : 360px){
+  #main-bg            {
+    max-width: 120%;
+    width: 100%;
+    height: 60%;
+    margin-left: -100px;
+    margin-top: -100px;
+    z-index: 1;
+  }
+  /* About Me */
+  .inner { width:330px; height:440px; background:rgba(0, 0, 12, 0.8); border-radius:30px; -webkit-border-radius:30px; margin:5px; padding:15px; top:5px; position:relative; font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; font-size:10px; }
+  .inner2 { width:310px; height:420px; background:rgba(0, 0, 0, 0); top:5px; position:relative; }
+  .content2 { width:340px; height:450px; top:15%; right: 7%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0.3); border-radius:35px; -webkit-border-radius: 35px 35px 35px 35px; }
+  /* Home Page */
+  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
+  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; margin-top: -5%; }
+  .links { font-size: 2.5vw; word-spacing:30px; }
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
