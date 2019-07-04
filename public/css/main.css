@@ -235,6 +235,7 @@ and (min-width : 360px){
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
   #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; margin-top: -5%; }
   .links { font-size: 2.5vw; word-spacing:30px; }
+}
 
 /* Smartphones (portrait and landscape) ----------- */
 @media only screen
@@ -243,3 +244,4 @@ and (max-device-width : 480px)
 and (orientation : portrait) {
   /* Styles */
 }
+
