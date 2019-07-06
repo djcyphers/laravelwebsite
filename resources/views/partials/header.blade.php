@@ -1,18 +1,15 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=0.6, maximum-scale=0.6, minimum-scale=0.6">
+<meta name="viewport" content="width=device-width, height=device-height, initial-scale=0.8, maximum-scale=0.8, minimum-scale=0.8">
 
 <!-- Favicon -->
 <link rel="icon" href="{{ asset('img/favicon.gif') }}" type="image/gif">
 
 <!-- CSS Files -->
-<link href="{{ asset('css/main.css') }}" rel="stylesheet">
-<link href="{{ asset('css/app.css') }}" rel="stylesheet">
-
-<title>DJ Cyphers</title>
+<link href="{{ asset('css/main.css') }}" rel="stylesheet" type="text/css">
+<link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
 <!-- Meta -->
 <title>Music, Life, Musings</title>
-<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 <meta name="author" content="DJ Cyphers - djcyphers.com">
 <meta name="description" content="Everything about Music, Life, and Myself">
 <meta name="keywords" content="djcyphers, house music, dance music, electro house, dubstep, edm, continuous mix, djmix, web design, web developer">

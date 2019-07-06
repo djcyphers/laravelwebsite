@@ -6,7 +6,7 @@
     <body>
         <!-- Parallax Effect -->
         <div id="parallax-bg" class="parallax">
-            <img id="main-bg" src="{{ asset('img/Wide-landscape-lakeview.png') }}">
+            <img id="main-bg" alt="Landscape" src="{{ asset('img/Wide-landscape-lakeview.png') }}">
         </div>
 
         <!-- End Effect -->

@@ -1,4 +1,6 @@
 // JS and jQuery Scripts
+
+// Old non-working script
 // $(document).ready(function() {
 //     $('a.link').click(function () {
 //         $('#wrapper').scrollTo($(this).attr('href'), 200);
@@ -10,6 +12,8 @@
 //     });
 // });
 
+
+
 $(document).ready(function() {
     $('a.link').click(function () {
         setPosition($(this).attr('href'));
@@ -18,6 +22,13 @@ $(document).ready(function() {
         return false;
     });
 });
+
+//* No more media query crap for responsive parallax background image
+// $(document).ready(function() {
+//     var winWidth = $(window).width() * 1.5;
+//     var winHeight = $(window).height() * 2.5;
+//     $("#main-bg").css({"height": winHeight, "width": winWidth});
+// });
 
 function setPosition(check) {
     var dWidth = $(window).width() / 3;
