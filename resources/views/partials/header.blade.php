@@ -10,6 +10,7 @@
 <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css">
 <!-- Meta -->
 <title>Music, Life, Musings</title>
+{!!\WebDevEtc\BlogEtc\Helpers::rss_html_tag()!!}
 <meta name="author" content="DJ Cyphers - djcyphers.com">
 <meta name="description" content="Everything about Music, Life, and Myself">
 <meta name="keywords" content="djcyphers, house music, dance music, electro house, dubstep, edm, continuous mix, djmix, web design, web developer">

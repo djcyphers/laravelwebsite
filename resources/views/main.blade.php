@@ -15,8 +15,8 @@
             <ul id="menu">
                 <li><a href="#box1" class="link">Home</a></li>
                 <li><a href="#box2" class="link">About</a></li>
-                <li><a href="#box3" class="link">Gallery</a></li>
-                <li><a href="#box4" class="link">Social Media</a></li>
+                <li><a href="#box3" class="link">Portfolio</a></li>
+                <li><a href="#box4" class="link">Social</a></li>
             </ul>
         </div><!-- end header -->
         <!-- Begin Wrapper -->
