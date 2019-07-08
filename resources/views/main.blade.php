@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ app()->getLocale() }}">
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         @include('partials.header')
     </head>
@@ -55,7 +55,7 @@
             <li id="box3" class="box">
                 <a name="box3"></a>
                 <div class="content3">
-                <div id="pics2">Gallery Goes Here</div>
+                <div id="pics2">Portfolio Section</div>
                 </div>
             </li><!-- end box3 -->
             <li id="box4" class="box">

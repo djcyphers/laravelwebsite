@@ -14,7 +14,16 @@
                         </div>
                     @endif
 
-                    You are logged in!
+                    You are logged in!<br>
+                    <a href='{{route('blogetc.index')}}'
+                    class='btn border  btn-outline-primary btn-sm '>
+                    <i class="fa fa-cogs" aria-hidden="true"></i>Go to Blog</a>
+                    <br>
+
+                    <a href='{{route("blogetc.admin.index")}}'
+                        class='btn border  btn-outline-primary btn-sm '>
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                    Go To Blog Admin Panel</a>
                 </div>
             </div>
         </div>

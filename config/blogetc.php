@@ -121,7 +121,7 @@ return [
         'text_limit' => 100, // max length of description text in the rss feed
         'posts_to_show_in_rss_feed' => 10,  // how many posts should we show in the rss feed
         'cache_in_minutes' => 60, // how long (in minutes) to cache the RSS blog feed for.
-        'description' => "Our blog post RSS feed", //description for the RSS feed
+        'description' => "Blog RSS feed", //description for the RSS feed
         'language' => "en", // see https://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
     ],
 
@@ -136,7 +136,7 @@ return [
         //      'disqus' (uses https://disqus.com/, please enter further config options below),
         //      'custom' (will load blogetc::partials.custom_comments, which you can copy to your vendor view dir to customise
         //      'disabled' (turn comments off)
-        'type_of_comments_to_show' => 'built_in', // default: built_in
+        'type_of_comments_to_show' => 'disqus', // default: built_in
 
         'max_num_of_comments_to_show' => 1000, // max num of comments to show on a single blog post. Set to a lower number for smaller page sizes. No comment pagination is built in yet.
 
@@ -163,7 +163,7 @@ return [
 //                          s.src = 'https://yourusername_or_sitename.disqus.com/embed.js';
 //
 //             You must enter the whole url (but not the "s.src = '" part!)
-            'src_url' => "https://GET_THIS_FROM_YOUR_EMBED_CODE.disqus.com/embed.js", // enter the url here, from the html snippet disqus provides
+            'src_url' => "https://djcyphers-com.disqus.com/embed.js", // enter the url here, from the html snippet disqus provides
 
         ],
     ],
