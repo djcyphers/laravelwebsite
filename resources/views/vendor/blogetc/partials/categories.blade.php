@@ -1,7 +1,7 @@
-<div class=''>
+<div class="entry__meta">
+    <span class="entry__meta-links">
     @foreach($post->categories as $category)
-        <a class='btn btn-outline-secondary btn-sm m-1' href='{{$category->url()}}'>
-            {{$category->category_name}}
-        </a>
+        <a href="{{$category->url()}}">{{$category->category_name}}</a>
     @endforeach
+    </span>
 </div>

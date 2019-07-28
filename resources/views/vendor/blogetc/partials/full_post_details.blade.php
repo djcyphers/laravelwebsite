@@ -1,29 +1,59 @@
-@if(\Auth::check() && \Auth::user()->canManageBlogEtcPosts())
-    <a href="{{$post->edit_url()}}" class="btn btn-outline-secondary btn-sm pull-right float-right">Edit
-        Post</a>
-@endif
 
-<h2 class='blog_title'>{{$post->title}}</h2>
-<h5 class='blog_subtitle'>{{$post->subtitle}}</h5>
+<div class="s-content__header col-full">
+    <h1 class="s-content__header-title">{{$post->title}}</h1>
+    <p class="lead">{{$post->subtitle}}</p>
+    <ul class="s-content__header-meta">
+        <li class="date">Posted {{$post->posted_at->diffForHumans()}}
+            @includeWhen($post->author,"blogetc::partials.author",['post'=>$post])
+        </li>
+        <br>
+        <li class="cat">
+            @includeWhen($post->categories,"blogetc::partials.categories",['post'=>$post])
+        </li>
+    </ul>
+</div> <!-- end s-content__header -->
 
+<div class="s-content__media col-full">
+    <div class="s-content__post-thumb">
+        <?=$post->image_tag("large", false, 'flex-horizontal-center'); ?>
+    </div>
+</div> <!-- end s-content__media -->
 
-<?=$post->image_tag("medium", false, 'd-block mx-auto'); ?>
+<div class="col-full s-content__main">
+    <p class="lead">
+        {!! $post->post_body_output() !!}
 
-<p class="blog_body_content">
-    {!! $post->post_body_output() !!}
+        {{--@if(config("blogetc.use_custom_view_files")  && $post->use_view_file)--}}
+        {{--                                // use a custom blade file for the output of those blog post--}}
+        {{--   @include("blogetc::partials.use_view_file")--}}
+        {{--@else--}}
+        {{--   {!! $post->post_body !!}        // unsafe, echoing the plain html/js--}}
+        {{--   {{ $post->post_body }}          // for safe escaping --}}
+        {{--@endif--}}
+    </p>
 
-    {{--@if(config("blogetc.use_custom_view_files")  && $post->use_view_file)--}}
-    {{--                                // use a custom blade file for the output of those blog post--}}
-    {{--   @include("blogetc::partials.use_view_file")--}}
-    {{--@else--}}
-    {{--   {!! $post->post_body !!}        // unsafe, echoing the plain html/js--}}
-    {{--   {{ $post->post_body }}          // for safe escaping --}}
-    {{--@endif--}}
-</p>
+    <div class="s-content__author">
+        <img src="{{ asset('img/DJ_Avatar.png') }}" alt="">
 
-<hr/>
+        <div class="s-content__author-about">
+            <h4 class="s-content__author-name">
+                <a href="#0">DJ Cyphers</a>
+            </h4>
 
-Posted <strong>{{$post->posted_at->diffForHumans()}}</strong>
+            <p>
+                An avid gamer, designer, developer, disc golfer, streamer, disc-jockey, music producer, and bunch of other pretentious stuff I love doing. Although, my true love will always be my daughter Aryanna; who will always have my heart.
+            </p>
 
-@includeWhen($post->author,"blogetc::partials.author",['post'=>$post])
-@includeWhen($post->categories,"blogetc::partials.categories",['post'=>$post])
+            <ul class="s-content__author-social">
+                <li><a href="https://www.facebook.com/iheardancemusic/">Facebook</a></li>
+                <li><a href="https://www.twitter.com/djcyphers/">Twitter</a></li>
+                <li><a href="https://www.instagram.com/djcyphers/">Instagram</a></li>
+                <li><a href="https://www.pinterest.com/djcyphers/">Pinterest</a></li>
+                <li><a href="https://www.linkedin.com/in/djcyphers/">LinkedIn</a></li>
+                <li><a href="https://soundcloud.com/djcyphers/">SoundCloud</a></li>
+                <li><a href="https://mixcloud.com/djcyphers/">MixCloud</a></li>
+                <li><a href="https://github.com/djcyphers/">GitHub</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

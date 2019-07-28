@@ -3,27 +3,33 @@
 
 
     {{--https://webdevetc.com/laravel/packages/blogetc-blog-system-for-your-laravel-app/help-documentation/laravel-blog-package-blogetc#guide_to_views--}}
-
-    <div class='container'>
-    <div class='row'>
-        <div class='col-sm-12 col-md-12 col-lg-12'>
+    <section class="s-content s-content--narrow s-content--no-padding-bottom">
+        <article class="row format-standard">
 
             @include("blogetc::partials.show_errors")
             @include("blogetc::partials.full_post_details")
 
+        </article>
+
 
             @if(config("blogetc.comments.type_of_comments_to_show","built_in") !== 'disabled')
-                <div class="" id='maincommentscontainer'>
-                    <h2 class='text-center' id='blogetccomments'>Comments</h2>
-                    @include("blogetc::partials.show_comments")
+                <div class="comments-wrap">
+                    <div id="comments" class="row">
+                        <div class="col-full">
+                            <ol class="commentlist">
+
+                            <h3 class="h2">Comments</h3>
+                            @include("blogetc::partials.show_comments")
+
+                            </ol>
+                        </div>
+                    </div>
                 </div>
             @else
                 {{--Comments are disabled--}}
             @endif
 
+    </section>
 
-        </div>
-    </div>
-    </div>
 
 @endsection

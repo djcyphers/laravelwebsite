@@ -55,7 +55,7 @@
             <li id="box3" class="box">
                 <a name="box3"></a>
                 <div class="content3">
-                <div id="pics2">Portfolio Section</div>
+                <div id="pics2">Portfolio</div>
                 </div>
             </li><!-- end box3 -->
             <li id="box4" class="box">
@@ -71,7 +71,6 @@
     </div><!-- end wrapper -->
 
         <!-- Footer Layout -->
-        @include('partials.footer')
         @include('partials.footer-scripts')
     </body>
 </html>

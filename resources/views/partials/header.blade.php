@@ -14,6 +14,8 @@
 <meta name="author" content="DJ Cyphers - djcyphers.com">
 <meta name="description" content="Everything about Music, Life, and Myself">
 <meta name="keywords" content="djcyphers, house music, dance music, electro house, dubstep, edm, continuous mix, djmix, web design, web developer">
+<!-- Pintrest Verify -->
+<meta name="p:domain_verify" content="872abbae8f7e3179d872dac330020cb5"/>
 <meta name="csrf-token" content="{{ csrf_token() }}">
 
 <!-- Scripts -->
