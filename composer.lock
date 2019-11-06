@@ -4,8 +4,66 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94f966fa1891c1839f9c9fb1f3f4a87f",
+    "content-hash": "07c71f92445d08d9a7975a52db722aad",
     "packages": [
+        {
+            "name": "buzz/laravel-google-captcha",
+            "version": "v2.1.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thinhbuzz/laravel-google-captcha.git",
+                "reference": "d6e8efdd11475cd590acf3041976f996e52fb5df"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thinhbuzz/laravel-google-captcha/zipball/d6e8efdd11475cd590acf3041976f996e52fb5df",
+                "reference": "d6e8efdd11475cd590acf3041976f996e52fb5df",
+                "shasum": ""
+            },
+            "require": {
+                "google/recaptcha": "1.*",
+                "illuminate/support": "5.*",
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Buzz\\LaravelGoogleCaptcha\\CaptchaServiceProvider"
+                    ],
+                    "aliases": {
+                        "Captcha": "Buzz\\LaravelGoogleCaptcha\\CaptchaFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Buzz\\LaravelGoogleCaptcha\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "ThinhBuzz",
+                    "email": "mr.thinhbuzz@gmail.com",
+                    "homepage": "https://www.facebook.com/thinh.buzz"
+                }
+            ],
+            "description": "Google captcha for laravel 5.*",
+            "homepage": "https://github.com/thinhbuzz/laravel-google-captcha",
+            "keywords": [
+                "captcha",
+                "google-captcha",
+                "laravel",
+                "laravel5",
+                "no-captcha",
+                "recaptcha"
+            ],
+            "time": "2018-04-18T15:56:14+00:00"
+        },
         {
             "name": "cocur/slugify",
             "version": "v3.2",
@@ -537,6 +595,116 @@
             "time": "2018-02-07T20:20:57+00:00"
         },
         {
+            "name": "fortawesome/font-awesome",
+            "version": "5.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/FortAwesome/Font-Awesome.git",
+                "reference": "ba907eaec40fab01d410c3023a5572b2cb46cea6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/ba907eaec40fab01d410c3023a5572b2cb46cea6",
+                "reference": "ba907eaec40fab01d410c3023a5572b2cb46cea6",
+                "shasum": ""
+            },
+            "type": "library",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-4.0",
+                "OFL-1.1",
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Travis Chase",
+                    "homepage": "http://twitter.com/supercodepoet"
+                },
+                {
+                    "name": "Dave Gandy",
+                    "homepage": "http://twitter.com/davegandy"
+                },
+                {
+                    "name": "Rob Madole",
+                    "homepage": "http://twitter.com/robmadole"
+                },
+                {
+                    "name": "Jory Raphael",
+                    "homepage": "http://twitter.com/sensibleworld"
+                },
+                {
+                    "name": "Geremia Taglialatela",
+                    "homepage": "http://twitter.com/gtagliala"
+                },
+                {
+                    "name": "Brian Talbot",
+                    "homepage": "http://twitter.com/talbs"
+                },
+                {
+                    "name": "Mike Wilkerson",
+                    "homepage": "http://twitter.com/mw77"
+                }
+            ],
+            "description": "The iconic font, CSS, and SVG framework",
+            "homepage": "https://fontawesome.com",
+            "keywords": [
+                "FontAwesome",
+                "awesome",
+                "bootstrap",
+                "font",
+                "icon",
+                "svg"
+            ],
+            "time": "2019-06-04T21:18:16+00:00"
+        },
+        {
+            "name": "google/recaptcha",
+            "version": "1.2.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/google/recaptcha.git",
+                "reference": "c4a17d6af648d4f3814430cd103cba50b75b571c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/google/recaptcha/zipball/c4a17d6af648d4f3814430cd103cba50b75b571c",
+                "reference": "c4a17d6af648d4f3814430cd103cba50b75b571c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.5"
+            },
+            "require-dev": {
+                "friendsofphp/php-cs-fixer": "^2.2.20|^2.15",
+                "php-coveralls/php-coveralls": "^2.1",
+                "phpunit/phpunit": "^4.8.36|^5.7.27|^6.59|^7.5.11"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ReCaptcha\\": "src/ReCaptcha"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "description": "Client library for reCAPTCHA, a free service that protects websites from spam and abuse.",
+            "homepage": "https://www.google.com/recaptcha/",
+            "keywords": [
+                "Abuse",
+                "captcha",
+                "recaptcha",
+                "spam"
+            ],
+            "time": "2019-05-24T12:44:03+00:00"
+        },
+        {
             "name": "guzzlehttp/psr7",
             "version": "1.6.1",
             "source": {
@@ -763,6 +931,63 @@
                 }
             ],
             "time": "2015-04-20T18:58:01+00:00"
+        },
+        {
+            "name": "jerodev/laravel-font-awesome",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jerodev/laravel-font-awesome.git",
+                "reference": "92edcf136f2f9a98e7abbc9673423033465c890d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jerodev/laravel-font-awesome/zipball/92edcf136f2f9a98e7abbc9673423033465c890d",
+                "reference": "92edcf136f2f9a98e7abbc9673423033465c890d",
+                "shasum": ""
+            },
+            "require": {
+                "fortawesome/font-awesome": "^5.9",
+                "illuminate/support": "5.6.x|5.7.x|5.8.x"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^3.5",
+                "phpstan/phpstan": "^0.11.8",
+                "phpunit/phpunit": "^7|^8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Jerodev\\LaraFontAwesome\\FontAwesomeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Jerodev\\LaraFontAwesome\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jeroen Deviaene",
+                    "email": "jeroen@deviaene.eu",
+                    "homepage": "https://www.deviaene.eu/",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel package that renders Font Awesome icons server-side",
+            "homepage": "https://github.com/jerodev/laravel-font-awesome",
+            "keywords": [
+                "FontAwesome",
+                "laravel",
+                "svg"
+            ],
+            "time": "2019-06-27T11:26:58+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2930,6 +3155,72 @@
                 "write"
             ],
             "time": "2018-11-15T12:46:03+00:00"
+        },
+        {
+            "name": "webdevetc/contactetc",
+            "version": "v1.0.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WebDevEtc/ContactEtc.git",
+                "reference": "88aa43535a68f46df034f7b8149a4944824152aa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WebDevEtc/ContactEtc/zipball/88aa43535a68f46df034f7b8149a4944824152aa",
+                "reference": "88aa43535a68f46df034f7b8149a4944824152aa",
+                "shasum": ""
+            },
+            "require": {
+                "buzz/laravel-google-captcha": "2.*",
+                "illuminate/database": "~5.5.0|~5.6.0|5.7.*",
+                "illuminate/support": "~5.5.0|~5.6.0|5.7.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "WebDevEtc\\ContactEtc\\ContactEtcServiceProvider"
+                    ],
+                    "aliases": []
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "WebDevEtc\\ContactEtc\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "WebDevEtc",
+                    "email": "packages@webdevetc.com",
+                    "homepage": "https://webdevetc.com/",
+                    "role": "developer"
+                }
+            ],
+            "description": "Simple contact form to quickly add to your laravel project. Fully customisable, includes all views, routes and controllers. Also includes anti-spam (with recaptcha). You can also have multiple contact forms on one Laravel site.",
+            "keywords": [
+                "contact",
+                "contact form",
+                "contact us",
+                "email",
+                "form",
+                "get in touch",
+                "laravel",
+                "package",
+                "php",
+                "programming",
+                "recaptcha",
+                "webdev",
+                "webdevetc"
+            ],
+            "time": "2018-11-05T12:57:16+00:00"
         }
     ],
     "packages-dev": [

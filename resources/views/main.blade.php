@@ -39,6 +39,7 @@
                         <a href="https://github.com/djcyphers/laravelwebsite">GitHub</a>
                         <a href="https://www.linkedin.com/in/dennis-cyphers-74932219/">LinkedIn</a>
                         <a href="https://www.facebook.com/iheardancemusic">Facebook</a>
+                        <a href="http://djcyphers.com/blog">Blog</a>
                     </div>
                     <!-- End Temp -->
 

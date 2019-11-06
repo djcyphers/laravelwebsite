@@ -8,10 +8,12 @@
         "php": "^7.1.3",
         "components/jquery": "^3.3",
         "fideloper/proxy": "^4.0",
+        "jerodev/laravel-font-awesome": "^1.0",
         "laravel/framework": "5.7.*",
         "laravel/tinker": "^1.0",
         "twbs/bootstrap": "^4.1",
-        "webdevetc/blogetc": "^3.1"
+        "webdevetc/blogetc": "^3.1",
+        "webdevetc/contactetc": "^1.0"
     },
     "require-dev": {
         "beyondcode/laravel-dump-server": "^1.0",

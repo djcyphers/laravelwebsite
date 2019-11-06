@@ -82,7 +82,7 @@
                             </ul>
                         </li>
                         <li><a href="http://djcyphers.com/#box2" title="">@fa('info-circle') About</a></li>
-                        <li><a href="contact.html" title="">@fa('address-card') Contact</a></li>
+                        <li><a href="{{ route('contactetc.form.main_contact_form') }}" title="">@fa('address-card') Contact</a></li>
 
                         <!-- Login if Guest-->
                         @guest
@@ -155,7 +155,7 @@
 
                     <div class="featured__column featured__column--small">
 
-                        @foreach(\WebDevEtc\BlogEtc\Models\BlogEtcPost::orderBy("posted_at","desc")->limit(2)->get() as $post)
+                        @foreach(\WebDevEtc\BlogEtc\Models\BlogEtcPost::inRandomOrder()->limit(2)->get() as $post)
                         <div class="entry">
                             <?=$post->image_tag("medium", true, ''); ?>
                             <div class="entry__content">
@@ -189,7 +189,12 @@
 
     </section> <!-- end s-pageheader -->
 
+    @if(Request::url() === 'http://djcyphers.com/contact-us')
+    <section class="s-content s-content--narrow">
+    @else
     <section class="s-content">
+    @endif
+
     @yield('content')
     </section> <!-- end s-content -->
 
