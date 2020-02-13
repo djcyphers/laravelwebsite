@@ -6,7 +6,7 @@
 	],
 	"settings": {
 		"php.suggest.basic": false,
-		"php.executablePath": "C:\\tools\\php73\\PHP.EXE",
-		"php.validate.executablePath": "C:\\tools\\php73\\PHP.EXE"
+		"php.executablePath": "C:\\Program Files (x86)\\PHP\\PHP.EXE",
+		"php.validate.executablePath": "C:\\Program Files (x86)\\PHP\\PHP.EXE"
 	}
 }

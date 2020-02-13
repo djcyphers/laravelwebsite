@@ -1,7 +1,5 @@
 @forelse($comments as $comment)
 
-
-
     <div class="card bg-light mb-3">
         <div class="card-header">
             {{$comment->author()}}
@@ -16,10 +14,6 @@
             <p class="card-text">{!! nl2br(e($comment->comment))!!}</p>
         </div>
     </div>
-
-
-
-
 
 @empty
     <div class='alert alert-info'>No comments yet! Why don't you be the first?</div>

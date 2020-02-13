@@ -26,7 +26,7 @@
 
 </head>
 <body id="top">
-@if(Request::url() === 'http://djcyphers.com/blog')
+@if(Request::url() === 'https://djcyphers.com/blog')
     <section class="s-pageheader s-pageheader--home">
 @else
     <section class="s-pageheader">
@@ -81,13 +81,12 @@
                                 @include('blogetc::sitewide.show_all_categories')
                             </ul>
                         </li>
-                        <li><a href="http://djcyphers.com/#box2" title="">@fa('info-circle') About</a></li>
+                        <li><a href="https://djcyphers.com/#box2" title="">@fa('info-circle') About</a></li>
                         <li><a href="{{ route('contactetc.form.main_contact_form') }}" title="">@fa('address-card') Contact</a></li>
 
                         <!-- Login if Guest-->
                         @guest
                         <li><a href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                        <li><a href="{{ route('register') }}">{{ __('Register') }}</a></li>
                         @else
                         <!-- Login Name -->
                         <li class="has-children">
@@ -124,7 +123,7 @@
             </div> <!-- header-content -->
         </header>
 
-        @if(Request::url() === 'http://djcyphers.com/blog')
+        @if(Request::url() === 'https://djcyphers.com/blog')
         <div class="pageheader-content row">
             <div class="col-full">
 
@@ -134,9 +133,9 @@
                         <div class="entry" style="background-image:url('img/halloweenparty.jpg');">
 
                             <div class="entry__content">
-                                <span class="entry__category"><a href="http://djcyphers.com/blog/category/lifestyle">Lifestyle</a></span>
+                                <span class="entry__category"><a href="https://djcyphers.com/blog/category/lifestyle">Lifestyle</a></span>
 
-                                <h1><a href="http://djcyphers.com/blog/welcome-to-my-blog" title="">Welcome to My Blog</a></h1>
+                                <h1><a href="https://djcyphers.com/blog/welcome-to-my-blog" title="">Welcome to My Blog</a></h1>
 
                                 <div class="entry__info">
                                     <a href="#0" class="entry__profile-pic">
@@ -189,7 +188,7 @@
 
     </section> <!-- end s-pageheader -->
 
-    @if(Request::url() === 'http://djcyphers.com/contact-us')
+    @if(Request::url() === 'https://djcyphers.com/contact-us')
     <section class="s-content s-content--narrow">
     @else
     <section class="s-content">
@@ -214,7 +213,7 @@
     </div>
 
     <!-- Java Script -->
-    <script src="{{ asset('js/jquery-3.2.1.min.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
     <script src="{{ asset('js/plugins.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 

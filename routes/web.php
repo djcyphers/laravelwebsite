@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('main');
 });
 
+Route::group(['middleware' => ['web'], 'namespace' => '\WebDevEtc\BlogEtc\Controllers'], function () {
+
+    Route::get('/', 'AlbumsController@view');
+});
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

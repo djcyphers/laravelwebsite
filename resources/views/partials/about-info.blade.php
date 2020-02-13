@@ -1,13 +1,66 @@
-<p>I was born on a beautiful island in Mayaguez, Puerto Rico. Grew up the first five years of my life there, enjoying the people and the many celebrations on the beach. 
-    There couldn't have been a better paradise to begin an interesting life.</p>
+<div class="container">
+    <div id="about-section" class="row">
 
-<p>Living in Washington now for about twenty years. I've grown to enjoy the rain and cold. Yet, this place isn't a one season location either. 
-    So while enduring this climate, there is at least the reward of a summer. No matter how short it always seems. 
-    Of course it also helps to have good friends to get you through the cold. There's definitely fun and interesting people to meet here! Just bring an umbrella.</p>
+        <div class="responsive-box col-md-6 col-lg-3">
+            <div class="card about-wrapper text-center">
 
-<p>My life's passion...</p>
+                <img src="https://i.ibb.co/yhnT66w/6010163-0264.jpg" class="card-img-top zoom about-image" alt="avatar">
 
-<p>I discovered House Music back in 1996. It was truly an amazing experience finding such sounds. 
-    In 1998 I bought my first pair of Technic 1200's and from there I've been hooked on anything dance music. 
-    My earlier inspirations from the dance scene were Donald Glaude, DJ Dan, Paul Van Dyke, Sasha and Digweed, Pete Tong, and Carl Cox. 
-    My current batch of favorite music producers would have to be LuckyDate, Le Castle Vania, Lazy Rich, Computer Club, and many others involved with Complextro/Electro House genres.</p><br/>
+                <ul class="socialshare-icons">
+                    <li>
+                      <a href="https://facebook.com/iheardancemusic">
+                        <i class="fa fa-facebook-f">@fa('facebook-f')</i>
+
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://instagram.com/djcyphers">
+                        <i class="fa fa-instagram">@fa('instagram')</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://twitter.com/djcyphers">
+                        <i class="fa fa-twitter">@fa('twitter')</i>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="https://www.behance.net/djcyphers">
+                        <i class="fa fa-behance">@fa('behance')</i>
+                      </a>
+                    </li>
+                  </ul>
+
+                <div class="card-body about-card mb-2">
+                   <h5 class="card-title about-title">DJ Cyphers</h5>
+                  <p class="card-text small job-title">Designer / Developer</p>
+                </div>
+
+              </div>
+        </div>
+
+        <div class="responsive-box col-md-6 col-lg-3">
+            <div class="card text-white border-0 bg-transparentmt-4 mt-4 about-section" style="cursor: pointer;" onclick="location.href='/blog';">
+                    <img src="https://via.placeholder.com/225" class="card-img-top zoom" alt="placeholder" style="filter: brightness(0%);">
+                    <div class="card-img-overlay">
+                        <p class="card-text line-1 anim-typewriter">My__Blog()</p>
+                        <p class="card-text line-1 anim-typewriter">My__Ideas()</p>
+                        <p class="card-text line-1 anim-typewriter">My__Life()</p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="responsive-box col-md-6 col-lg-3">
+            <div class="card text-white border-0 bg-transparent mt-4 about-section">
+                    <img src="https://via.placeholder.com/225" class="card-img-top zoom" alt="placeholder" style="opacity:0.2;">
+            </div>
+        </div>
+
+        <div class="responsive-box col-md-6 col-lg-3">
+            <div class="card text-white border-0 bg-transparent mt-4 about-section">
+                    <img src="https://via.placeholder.com/225" class="card-img-top zoom" alt="placeholder" style="opacity:0.2;">
+            </div>
+        </div>
+
+    </div>
+</div>
+
