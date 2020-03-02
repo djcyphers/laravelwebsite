@@ -41,18 +41,18 @@
             </h4>
 
             <p>
-                An avid gamer, designer, developer, disc golfer, streamer, disc-jockey, music producer, and bunch of other pretentious stuff I love doing. Although, my true love will always be my daughter Aryanna; who will always have my heart.
+                An avid gamer, designer, developer, disc golfer, streamer, disc-jockey, music producer, and a bunch of other stuff. But most important of all, is being a dad to my daughter Aryana.
             </p>
 
             <ul class="s-content__author-social">
-                <li><a href="https://www.facebook.com/iheardancemusic/">Facebook</a></li>
-                <li><a href="https://www.twitter.com/djcyphers/">Twitter</a></li>
-                <li><a href="https://www.instagram.com/djcyphers/">Instagram</a></li>
-                <li><a href="https://www.pinterest.com/djcyphers/">Pinterest</a></li>
-                <li><a href="https://www.linkedin.com/in/djcyphers/">LinkedIn</a></li>
-                <li><a href="https://soundcloud.com/djcyphers/">SoundCloud</a></li>
-                <li><a href="https://mixcloud.com/djcyphers/">MixCloud</a></li>
-                <li><a href="https://github.com/djcyphers/">GitHub</a></li>
+                <li><a href="https://www.facebook.com/iheardancemusic/">@fa('facebook') Facebook</a></li>
+                <li><a href="https://www.twitter.com/djcyphers/">@fa('twitter') Twitter</a></li>
+                <li><a href="https://www.instagram.com/djcyphers/">@fa('instagram') Instagram</a></li>
+                <li><a href="https://www.pinterest.com/djcyphers/">@fa('pinterest') Pinterest</a></li>
+                <li><a href="https://www.linkedin.com/in/djcyphers/">@fa('linkedin') LinkedIn</a></li>
+                <li><a href="https://soundcloud.com/djcyphers/">@fa('soundcloud') SoundCloud</a></li>
+                <li><a href="https://mixcloud.com/djcyphers/">@fa('mixcloud') MixCloud</a></li>
+                <li><a href="https://github.com/djcyphers/">@fa('github') GitHub</a></li>
             </ul>
         </div>
     </div>

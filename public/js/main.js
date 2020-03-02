@@ -3,6 +3,14 @@ $(document).ready(function() {
     // Setup for blog
     $('a').has('img').addClass('entry__thumb-link');
 
+    //Setup event handler to detect orientation change and then re-correct site position in referance to the menu selection
+    window.addEventListener("orientationchange", function() {
+        var elm = $('.menu');
+        if(elm.has('.selected')) {
+        setTimeout("$('.selected').click();", 100);
+        }
+    });
+
     // Setup for touchswipe on main page
     document.addEventListener('touchstart', handleTouchStart, false);
     document.addEventListener('touchmove', handleTouchMove, false);

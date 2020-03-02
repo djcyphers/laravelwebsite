@@ -548,7 +548,7 @@ form,
    right: 0;
    bottom: 0;
    background: #050505;
-   z-index: 800;
+   z-index: 999;
    height: 100%;
    width: 100%;
    display: table;
@@ -2539,6 +2539,7 @@ body.search-is-visible {
 .featured__column--small {
    width: 33.333333333%;
    position: relative;
+   margin-top: 13px;
 }
 
 .featured__column--small .entry {
@@ -4155,7 +4156,6 @@ footer h4::after {
 }
 
 #map-wrap .gm-style label {
-   width: auto;
    display: inline;
 }
 

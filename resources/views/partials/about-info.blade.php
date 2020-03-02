@@ -51,7 +51,10 @@
 
         <div class="responsive-box col-md-6 col-lg-3">
             <div class="card text-white border-0 bg-transparent mt-4 about-section">
-                    <img src="https://via.placeholder.com/225" class="card-img-top zoom" alt="placeholder" style="opacity:0.2;">
+                <ul class="list-group list-group-flush text-center rounded">
+                    <li class="list-group-item link-soundcloud" style="height: 7.9rem;">@fa('soundcloud') SoundCloud</li>
+                    <li class="list-group-item link-mixcloud" style="height: 7.9rem;">@fa('mixcloud') MixCloud</li>
+                </ul>
             </div>
         </div>
 
