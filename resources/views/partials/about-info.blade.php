@@ -2,7 +2,7 @@
     <div id="about-section" class="row">
 
         <div class="responsive-box col-md-6 col-lg-3">
-            <div class="card about-wrapper text-center">
+            <div class="card about-wrapper text-center" style="height: 255px !important;">
 
                 <img src="https://i.ibb.co/yhnT66w/6010163-0264.jpg" class="card-img-top zoom about-image" alt="avatar">
 
@@ -51,10 +51,19 @@
 
         <div class="responsive-box col-md-6 col-lg-3">
             <div class="card text-white border-0 bg-transparent mt-4 about-section">
-                <ul class="list-group list-group-flush text-center rounded">
-                    <li class="list-group-item link-soundcloud" style="height: 7.9rem;">@fa('soundcloud') SoundCloud</li>
-                    <li class="list-group-item link-mixcloud" style="height: 7.9rem;">@fa('mixcloud') MixCloud</li>
-                </ul>
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img src="https://via.placeholder.com/255" alt="Avatar" height="255px">
+                      </div>
+                      <div class="flip-card-back">
+                        <ul class="list-group list-group-flush text-center rounded">
+                            <li class="list-group-item link-soundcloud" style="height: 7.9rem;">@fa('soundcloud') SoundCloud</li>
+                            <li class="list-group-item link-mixcloud" style="height: 7.9rem;">@fa('mixcloud') MixCloud</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
             </div>
         </div>
 
