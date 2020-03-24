@@ -43,4 +43,6 @@
 <script src="https://assets.juicer.io/embed.js" type="text/javascript"></script>
 
 <!-- Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Antic' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Big Shoulders Text' rel='stylesheet'>

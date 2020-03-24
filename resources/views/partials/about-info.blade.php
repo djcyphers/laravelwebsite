@@ -39,8 +39,8 @@
         </div>
 
         <div class="responsive-box col-md-6 col-lg-3">
-            <div class="card text-white border-0 bg-transparentmt-4 mt-4 about-section" style="cursor: pointer;" onclick="location.href='/blog';">
-                    <img src="https://via.placeholder.com/225" class="card-img-top zoom" alt="placeholder" style="filter: brightness(0%);">
+            <div class="card text-white border-0 bg-transparent mt-4 about-section about-blog" style="cursor: pointer;" onclick="location.href='/blog';">
+                    <img src="{{ asset('img/ImagePlaceholder.png') }}" class="card-img-top zoom" alt="placeholder" style="filter: brightness(0%);">
                     <div class="card-img-overlay">
                         <p class="card-text line-1 anim-typewriter">My__Blog()</p>
                         <p class="card-text line-1 anim-typewriter">My__Ideas()</p>
@@ -54,12 +54,13 @@
                 <div class="flip-card">
                     <div class="flip-card-inner">
                       <div class="flip-card-front">
-                        <img src="https://via.placeholder.com/255" alt="Avatar" height="255px">
+                        <div class="flip-card-text text-center">@fa('user') @fa('heart') @fa('home') @fa('music')</div>
+                        <img src="{{ asset('img/ImagePlaceholder.png') }}" alt="Avatar" height="255px">
                       </div>
                       <div class="flip-card-back">
-                        <ul class="list-group list-group-flush text-center rounded">
-                            <li class="list-group-item link-soundcloud" style="height: 7.9rem;">@fa('soundcloud') SoundCloud</li>
-                            <li class="list-group-item link-mixcloud" style="height: 7.9rem;">@fa('mixcloud') MixCloud</li>
+                        <ul class="list-group list-group-flush rounded">
+                            <li class="list-group-item link-soundcloud d-flex align-items-center justify-content-center" onclick="scUrl();" style="height: 7.9rem;">@fa('soundcloud')&nbsp; SoundCloud</li>
+                            <li class="list-group-item link-mixcloud d-flex align-items-center justify-content-center" onclick="mcUrl();" style="height: 7.9rem;">@fa('mixcloud')&nbsp; MixCloud</li>
                         </ul>
                       </div>
                     </div>
@@ -69,7 +70,9 @@
 
         <div class="responsive-box col-md-6 col-lg-3">
             <div class="card text-white border-0 bg-transparent mt-4 about-section">
-                    <img src="https://via.placeholder.com/225" class="card-img-top zoom" alt="placeholder" style="opacity:0.2;">
+                <div class="embed-responsive embed-responsive-16by9" style="height: 255px;">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/RoNNJ_nPWY0?controls=0"></iframe>
+                </div>
             </div>
         </div>
 

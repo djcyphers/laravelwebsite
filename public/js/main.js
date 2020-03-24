@@ -81,6 +81,17 @@ $(document).ready(function() {
     };
 });
 
+// Onclick send to url for soundcloud + mixcloud
+function scUrl() {
+    var url = "http://soundcloud.com/djcyphers";
+    window.open(url);
+}
+
+function mcUrl() {
+    var url = "http://mixcloud.com/djcyphers";
+    window.open(url);
+}
+
 // Gallery from Laravel
 $(document).ready(function() {
     //Setup hover event

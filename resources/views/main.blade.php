@@ -6,7 +6,7 @@
     <body>
         <!-- Parallax Effect -->
         <div id="parallax-bg" class="parallax">
-            <img id="main-bg" alt="Landscape" src="{{ asset('img/tacomacityscape_opacity40.png') }}">
+            <img id="main-bg" alt="landscape" src="{{ asset('img/tacomacityscape_opacity40.png') }}">
         </div>
 
         <!-- End Effect -->
@@ -28,17 +28,17 @@
 
                     <div class="content1-wrapper">
                         <!-- Temp Stuff -->
-                        <div id="myname">
+                        <div class="main-name">
                             DJ Cyphers
                         </div>
-                        <div id="content" class="flex-box">
-                            Under Developement. Stay tuned for more updates!
+                        <div class="underconstruction-text">
+                            Under Development. Stay tuned for more updates!
                         </div>
 
-                        <div class="links">
+                        <div class="mainpage-links">
                             <!-- Links go here -->
-                            <a href="https://github.com/djcyphers/laravelwebsite">GitHub</a>
-                            <a href="https://www.linkedin.com/in/dennis-cyphers-74932219/">LinkedIn</a>
+                            <a href="https://github.com/djcyphers">GitHub</a>
+                            <a href="https://www.linkedin.com/in/djcyphers/">LinkedIn</a>
                             <a href="https://www.facebook.com/iheardancemusic">Facebook</a>
                             <a href="https://djcyphers.com/blog">Blog</a>
                         </div>
@@ -72,7 +72,7 @@
                 <div class="content4 scroller">
                     <div class="content row">
                         <div class="col-lg-12">
-                        <ul class="juicer-feed" data-feed-id="facebook-c0982d7f-ccd1-4f5a-8a99-24ab5e0bf5e8"></ul>
+                        <ul class="juicer-feed" data-feed-id="facebook-c0982d7f-ccd1-4f5a-8a99-24ab5e0bf5e8" data-gutter="30" data-style="night"></ul>
                         <!-- <iframe src="http://www.ustream.tv/embed/10054617" width="608" height="368" scrolling="no" frameborder="0" style="border: 0px none transparent;"></iframe><br /> -->
                         </div>
                     </div>

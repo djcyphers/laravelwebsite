@@ -1,17 +1,43 @@
 /*** Initial Style Definitions ***/
-html { background:#000000;}
-body { overflow:hidden; background-color:black !important;}
-#content { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; }
-#myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-.links { font-size: 1.5vw; word-spacing:30px; }
+html {
+    background:#000000;
+}
+
+body {
+    overflow:hidden;
+    background-color:black !important;
+}
+
+/*** Front Page ***/
+.main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; font-family: 'Nunito'; }
+.underconstruction-text { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; font-family: 'Nunito'; }
+.mainpage-links { font-size: 1.5vw; word-spacing:30px; }
 
 /*** Background Images ***/
-#main-bg {height: 80%; width: 90%;}
-.parallax { width:300%; height:1200px; overflow:hidden; position: relative; }
+#main-bg {
+    height: 80%;
+    width: 90%;
+}
+
+.parallax {
+    width:300%;
+    height:1200px;
+    overflow:hidden;
+    position: relative;
+}
 
 /* About Things */
 .about-section {
     z-index:2;
+}
+
+.about-blog {
+    outline: rgb(0, 0, 0) solid 0px;
+    transition: outline 0.6s linear;
+}
+
+.about-blog:hover {
+    outline: rgb(255, 255, 255) solid 2px;
 }
 
 /*** Menu/Nav ***/
@@ -36,21 +62,21 @@ p { color:#FFFFFF;}
 
 .box { width:25%; height:100%; float:left; }
 
-#box1 {font-family:"Lucida Console", Monaco, monospace; font-size:20px; color:#FFFFFF;}
+#box1 { font-family:"Lucida Console", Monaco, monospace; font-size:20px; color:#FFFFFF; }
 
-#box2 { font-family:"MS Serif"; } /* Prices and services might go here */
+#box2 { font-family:"MS Serif"; }
 
-#box3 {font-family:"MS Serif", "New York", serif; font-size:20px;}
+#box3 { font-family:"MS Serif", "New York", serif; font-size:20px; }
 
 .image-wrapper { width: 30%; }
 
 .content1-wrapper { background: rgba(0, 0, 12, 0.6); }
 
-.content1 { width:960px; height:400px; top:30%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); }
+.content1 { width:960px; height:400px; top:23%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); }
 
-.content2 { width:960px; height:400px; top:20%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0);overflow:auto; left: -29px;}
+.content2 { width:960px; height:400px; top:20%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); overflow:auto; left: -29px;}
 
-.content3 { width:960px; height:600px; top:20%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0);overflow:auto; left: -18px;}
+.content3 { width:960px; height:600px; top:20%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); overflow:auto; left: -18px;}
 
 .content4 { width:620px; height:380px; top:23%; bottom:10%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); }
 
@@ -138,36 +164,36 @@ transition: all .9s;
 /**** Personal Details ****/
 
 .about-card {
-position: absolute;
-bottom: -54px;
-left: 0;
-background: #fff;
-width: 100%;
-height: 120px;
-z-index: 1;
-padding: 10px;
+    position: absolute;
+    bottom: -54px;
+    left: 0;
+    background: #fff;
+    width: 100%;
+    height: 120px;
+    z-index: 1;
+    padding: 10px;
 }
 
 .job-title {
-        font-size: 1rem;
-        line-height: 0rem;
-        color: #333;
-        font-weight: 300;
+    font-size: 1rem;
+    line-height: 0rem;
+    color: #333;
+    font-weight: 300;
 }
 
 /**** Social Icons *****/
 
 .socialshare-icons {
-scale: 0.9;
-position: absolute;
-top: 50%;
-left: 37.5%;
--webkit-transform: translate(-50%, -50%);
--moz-transform: translate(-50%, -50%);
--o-transform: translate(-50%, -50%);
-transform: translate(-50%, -50%);
-z-index: 3;
-display: flex;
+    scale: 0.9;
+    position: absolute;
+    top: 50%;
+    left: 37.5%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    display: flex;
 }
 
 ul.socialshare-icons li {
@@ -206,11 +232,11 @@ ul.socialshare-icons a {
 }
 
 .socialshare-icons li a:hover {
-background: #000;
--webkit-transition: 0.2s;
--moz-transition: 0.2s;
--o-transition: 0.2s;
-transition: 0.2s;
+    background: #000;
+    -webkit-transition: 0.2s;
+    -moz-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
 }
 
 ul.socialshare-icons i.fa {
@@ -225,7 +251,7 @@ ul.socialshare-icons i.fa {
 }
 
 .socialshare-icons li a:hover {
-color: #fff;
+    color: #fff;
 }
 
 .socialshare-icons li a svg:hover {
@@ -314,7 +340,6 @@ and (min-width : 1338px) {
 
 .flip-card {
 background-color: transparent;
-width: 255px;
 height: 255px;
 perspective: 1000px;
 }
@@ -342,23 +367,76 @@ backface-visibility: hidden;
 }
 
 .flip-card-front {
-background-color: #bbb;
+background-color: black;
 color: black;
 }
 
 .flip-card-back {
-background-color: #2980b9;
+background-color: #000000;
 color: white;
 transform: rotateY(180deg);
+}
+
+.flip-card-back:hover {
+    cursor: pointer;
 }
 
 .link-soundcloud {
     color: black;
 }
 
+.link-soundcloud {
+    color: black;
+    animation: fadeoutsc 2s;
+}
+
+@keyframes fadeoutsc {
+    from { background-color: #ff7700; }
+    to { background-color: white; }
+}
+
+.link-soundcloud:hover {
+    -webkit-animation: scgradient 2s forwards;
+    animation: scgradient 2s forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scgradient {
+    from { background-color: white; }
+    to { background-color: #ff7700; }
+}
+
 .link-mixcloud {
     color: black;
+    animation: fadeoutmc 2s;
 }
+
+@keyframes fadeoutmc {
+    from { background-color: #52aad8; }
+    to { background-color: white; }
+}
+
+.link-mixcloud:hover {
+    -webkit-animation: mcgradient 2s forwards;
+    animation: mcgradient 2s forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes mcgradient {
+    from { background-color: white; }
+    to { background-color: #52aad8; }
+}
+
+.flip-card-text {
+    /* Centered text */
+    top:45%;
+    background: black;
+    color: white;
+    position: absolute;
+    left: 39%;
+    scale: 2;
+}
+
 
 /* CatchMost (Portrait) ----------- */
 @media only screen
