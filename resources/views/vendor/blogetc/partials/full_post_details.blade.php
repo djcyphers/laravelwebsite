@@ -41,7 +41,7 @@
             </h4>
 
             <p>
-                An avid gamer, designer, developer, disc golfer, streamer, disc-jockey, music producer, and a bunch of other stuff. But most important of all, is being a dad to my daughter Aryana.
+                An avid gamer, designer, developer, disc golfer, streamer, disc-jockey, music producer, and a bunch of other stuff. Also, proud dad. Love you, Aryana!
             </p>
 
             <ul class="s-content__author-social">

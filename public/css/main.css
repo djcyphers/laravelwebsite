@@ -9,9 +9,24 @@ body {
 }
 
 /*** Front Page ***/
-.main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; font-family: 'Nunito'; }
-.underconstruction-text { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; font-family: 'Nunito'; }
-.mainpage-links { font-size: 1.5vw; word-spacing:30px; }
+.main-name {
+  display: flex;
+  word-wrap:break-word;
+  white-space:normal;
+  font-size: 2.5em;
+  font-family: 'Nunito';
+}
+.underconstruction-text {
+    display: flex;
+    word-wrap:break-word;
+    white-space:normal;
+    font-size: 1.5em;
+    font-family: 'Nunito';
+}
+.mainpage-links {
+    font-size: 1.5em;
+    word-spacing:30px;
+}
 
 /*** Background Images ***/
 #main-bg {
@@ -72,7 +87,7 @@ p { color:#FFFFFF;}
 
 .content1-wrapper { background: rgba(0, 0, 12, 0.6); }
 
-.content1 { width:960px; height:400px; top:23%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); }
+.content1 { width:960px; height:400px; top:26%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); }
 
 .content2 { width:960px; height:400px; top:20%; margin: 0 auto; position:relative; background:rgba(255,255,255, 0); overflow:auto; left: -29px;}
 
@@ -451,9 +466,32 @@ and (min-width : 416px) {
     z-index: 1;
   }
   /* About Me */
-  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; margin-top:-20%; }
-  .links { font-size: 1.5vw; word-spacing:30px; }
+.content1 {
+    top:30% !important;
+}
+
+.content3 {
+    top:18.5% !important;
+}
+
+.content4 {
+    top:20.8% !important;
+}
+
+.main-name {
+    display: flex;
+    word-wrap:break-word;
+    white-space:normal; font-size: 2em !important;
+    margin-top: -8%;
+}
+
+.underconstruction-text {
+      font-size: 0.8em !important;
+}
+
+.mainpage-links {
+      font-size: 0.8em !important;
+}
 
   /**** Social Icons Responsive Fix Needs JS Solution ****/
   .socialshare-icons {
@@ -475,7 +513,7 @@ and (min-height : 416px) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; margin-top:-20%; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; margin-top:-20%; }
   .links { font-size: 1.5vw; word-spacing:30px; }
 }
 
@@ -493,7 +531,7 @@ and (min-width : 767px) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; margin-top:-20%; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; margin-top:-20%; }
   .links { font-size: 1.5vw; word-spacing:30px; }
 }
 
@@ -511,7 +549,7 @@ and (min-height : 767px) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; margin-top:-10%; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; margin-top:-10%; }
   .links { font-size: 1.5vw; word-spacing:30px; }
 }
 
@@ -528,7 +566,7 @@ and (-moz-touch-enabled) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 1.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
   .links { font-size: 1.5vw; word-spacing:30px; }
 }
 
@@ -545,7 +583,7 @@ and (-moz-touch-enabled) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw;  margin-top: -8%; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw;  margin-top: -8%; }
   .links { font-size: 2.5vw; word-spacing:30px; }
 }
 
@@ -564,7 +602,7 @@ and (min-height : 375px) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
   .links { font-size: 2.5vw; word-spacing:30px; }
 }
 
@@ -583,7 +621,7 @@ and (min-width : 375px) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 5vw; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 5vw; }
   .links { font-size: 2.6vw; word-spacing:30px; }
   /*** Menu/Nav ***/
   #menu { float:right; position:absolute; top:20px; right:10px; z-index:10; font-size: 3.5vw }
@@ -606,7 +644,7 @@ and (min-height : 360px) {
   }
   /* About Me */
   #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 3.5vw; }
   .links { font-size: 2.5vw; word-spacing:30px; }
 
   /**** Social Icons Responsive Fix Needs JS Solution ****/
@@ -628,8 +666,10 @@ and (min-width : 360px) {
     z-index: 1;
   }
   /* About Me */
-  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2.5vw; }
-  #myname { display: flex; word-wrap:break-word; white-space:normal; font-size: 4.5vw; margin-top: -8%; }
+  #content { display: flex; word-wrap:break-word; white-space:normal; font-size: 2em; }
+  .main-name { display: flex; word-wrap:break-word; white-space:normal; font-size: 2em !important; margin-top: -8%; }
+  .underconstruction-text { font-size: 0.8em !important; }
+  .mainpage-links { font-size: 0.8em !important; }
   .links { font-size: 3.5vw; word-spacing:30px; }
   /*** Menu/Nav ***/
   #menu { float:right; position:absolute; top:20px; right:10px; z-index:10; font-size: 3.5vw }

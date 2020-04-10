@@ -5,7 +5,7 @@
 
             <div class="album-container col-md-6 col-lg-3" data-container="{{ $album->id }}">
                 <div class="card text-white border-0 bg-transparent mb-3 mt-4">
-                    <img src="/storage/album_covers/{{ $album->cover_image }}" class="card-img-top zoom" alt="{{ $album->cover_image }}" height="225px">
+                    <img src="/storage/album_covers/{{ $album->cover_image }}" class="card-img-top zoom" alt="{{ $album->cover_image }}" height="255px">
                     <p class="card-text" style="z-index: 1">{{ $album->name }}</p>
                 </div>
             </div>
